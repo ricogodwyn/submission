@@ -1,4 +1,3 @@
-Gunakan lib berikut:
 matplotlib.pyplot 
 pandas 
 numpy
