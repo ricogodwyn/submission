@@ -11,7 +11,7 @@ st.markdown("""
 - Bagaimana musim mempengaruhi polutan?
 """)
 
-df = pd.read_csv("filtered_data.csv")
+df = pd.read_csv("dashboard/filtered_data.csv")
 st.write(df.head())
 
 st.subheader("Pertanyaan 1")
