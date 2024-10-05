@@ -11,12 +11,13 @@ st.markdown("""
 - Bagaimana musim mempengaruhi polutan?
 """)
 
-df = pd.read_csv("dashboard/filtered_data.csv")
+df = pd.read_csv("filtered_data.csv")
 st.write(df.head())
 
 st.subheader("Pertanyaan 1")
 fig, ax = plt.subplots()
 sns.scatterplot(x=df['TEMP'], y=df['O3'], ax=ax)
+ax.set_title("Hubungan antara temperatur dan Konsentrasi Ozon")
 st.pyplot(fig)
 st.subheader("Penjelasan")
 st.markdown("""
@@ -29,10 +30,12 @@ st.markdown("""
 st.subheader("Pertanyaan 2")
 fig, ax = plt.subplots()
 sns.scatterplot(x=df['TEMP'], y=df['PM2.5'], ax=ax)
+ax.set_title("Hubungan antara PM2.5 dan temperatur")
 st.pyplot(fig)
 
 fig, ax = plt.subplots()
 sns.scatterplot(x=df['TEMP'], y=df['PM10'], ax=ax)
+ax.set_title("Hubungan antara PM10 dan temperatur")
 st.pyplot(fig)
 st.subheader("Penjelasan")
 st.markdown("""
