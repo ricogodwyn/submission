@@ -10,25 +10,38 @@ Pastikan Anda telah menginstal Python versi 3.8 atau yang lebih baru. Jika belum
 
 ```bash
 git clone https://github.com/ricogodwyn/submission
+```
 
 disini anda bisa membuka Notebook.ipynb untuk melihat analisis data
 
 ### 2. Membuat virtual Environtment
+
+```bash
 python -m venv env
 source env/bin/activate  # Untuk Linux/MacOS
 env\Scripts\activate  # Untuk Windows
-
+```
 
 ### 3. Menginstal Depedensi
-pip install -3 requirements.txt
+
+```bash
+pip install -r requirements.txt
+```
 
 ### 4. Menjalankan Aplikasi
+
+```bash
 cd dashboard
+```
 
 ### 5. Jalankan dashboard
+
+```bash
 streamlit run proyek_analisis_data_dicoding.py
+```
 
 ### 6. Deactivate virtual env
-deactivate
 
+```bash
+deactivate
 ```
